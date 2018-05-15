@@ -9,7 +9,7 @@ class ApplicationModel < ROM::Struct
 
     klass.constructor_type :schema
 
-    klass.attribute :id, Types::Strict::Int.optional.meta(primary_key: true)
+    # klass.attribute :id, Types::Strict::Int.optional.meta(primary_key: true)
   end
 
   def persisted?
